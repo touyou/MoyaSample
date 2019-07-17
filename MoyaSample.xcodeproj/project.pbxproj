@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		46AC8D2D22DEDCFE00381D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46AC8D2B22DEDCFE00381D53 /* Main.storyboard */; };
 		46AC8D2F22DEDD0000381D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46AC8D2E22DEDD0000381D53 /* Assets.xcassets */; };
 		46AC8D3222DEDD0000381D53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46AC8D3022DEDD0000381D53 /* LaunchScreen.storyboard */; };
+		46AC8D3A22DEDDE100381D53 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AC8D3922DEDDE100381D53 /* API.swift */; };
+		46AC8D3D22DEDF3800381D53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AC8D3C22DEDF3800381D53 /* Profile.swift */; };
 		722CAAC043EEF7A1B86C8B5D /* Pods_MoyaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807E366A1045309B0DA79D32 /* Pods_MoyaSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		46AC8D2E22DEDD0000381D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46AC8D3122DEDD0000381D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46AC8D3322DEDD0000381D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46AC8D3922DEDDE100381D53 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		46AC8D3C22DEDF3800381D53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		807E366A1045309B0DA79D32 /* Pods_MoyaSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		952AC70B1BAE4AB967FBD1F2 /* Pods-MoyaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSample.debug.xcconfig"; path = "Target Support Files/Pods-MoyaSample/Pods-MoyaSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,7 @@
 		46AC8D2622DEDCFE00381D53 /* MoyaSample */ = {
 			isa = PBXGroup;
 			children = (
+				46AC8D3B22DEDDFB00381D53 /* API */,
 				46AC8D2722DEDCFE00381D53 /* AppDelegate.swift */,
 				46AC8D2922DEDCFE00381D53 /* ViewController.swift */,
 				46AC8D2B22DEDCFE00381D53 /* Main.storyboard */,
@@ -79,13 +84,21 @@
 			path = MoyaSample;
 			sourceTree = "<group>";
 		};
+		46AC8D3B22DEDDFB00381D53 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				46AC8D3922DEDDE100381D53 /* API.swift */,
+				46AC8D3C22DEDF3800381D53 /* Profile.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		EE39507B2B7602CF14421C1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				952AC70B1BAE4AB967FBD1F2 /* Pods-MoyaSample.debug.xcconfig */,
 				44DAE68BB0E5B70B48A8184C /* Pods-MoyaSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46AC8D2A22DEDCFE00381D53 /* ViewController.swift in Sources */,
+				46AC8D3D22DEDF3800381D53 /* Profile.swift in Sources */,
+				46AC8D3A22DEDDE100381D53 /* API.swift in Sources */,
 				46AC8D2822DEDCFE00381D53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
