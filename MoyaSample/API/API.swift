@@ -40,17 +40,6 @@ extension ApiTargetType {
     }
 }
 
-enum GitHub {
-    struct GetUserProfile: ApiTargetType {
-        typealias Response = Profile
+enum GitHub {}
 
-        var method: Moya.Method { return .get }
-        var path: String { return "/users/\(name.urlEscaped)" }
-        var task: Task { return .requestPlain }
-        let name: String
 
-        init(name: String) {
-            self.name = name
-        }
-    }
-}
